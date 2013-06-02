@@ -851,6 +851,7 @@ nav ul a:hover {
 }
 
 footer {
+  display: none;
   width: 180px;
   position: fixed;
   left: 50%;

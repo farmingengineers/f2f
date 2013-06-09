@@ -502,8 +502,20 @@ table {
   border-spacing: 0;
 }
 
+body.fa { font-family: 'Patrick Hand SC', cursive; }
+body.fb { font-family: 'Gochi Hand', cursive; }
+body.fc { font-family: 'Shadows Into Light', cursive; }
+body.fd { font-family: 'Walter Turncoat', cursive; }
+body.fe { font-family: 'Amatic SC', cursive; }
+body.ff { font-family: 'Indie Flower', cursive; }
+body.fg { font-family: 'Shadows Into Light Two', cursive; }
+body.fh { font-family: 'Loved by the King', cursive; }
+body.fi { font-family: 'Architects Daughter', cursive; }
+body.fj { font-family: 'Coming Soon', cursive; }
+body.fk { font-family: 'Covered By Your Grace', cursive; }
+body.fl { font-family: 'Annie Use Your Telescope', cursive; }
 body {
-  font: 14px/22px "Quattrocento Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/22px;
   color: #666;
   font-weight: 300;
   margin: 0px;
@@ -669,7 +681,7 @@ header {
   min-height: 76px;
 }
 header h1 {
-  font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 40px/48px;
   color: #f3f3f3;
   text-shadow: 0px 2px 0px #235796;
   margin: 0px;

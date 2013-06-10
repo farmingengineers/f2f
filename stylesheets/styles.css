@@ -890,7 +890,6 @@ nav ul li.tag-h2 + .tag-h1 {
 }
 
 footer {
-  display: none;
   width: 180px;
   position: fixed;
   left: 50%;

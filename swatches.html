@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Color swatches</title>
+    <style>
+      .swatch {
+        display: inline-block;
+        border: solid 1px black;
+        padding: 1em;
+      }
+      .swatch .sample {
+        width: 100px;
+        height: 100px;
+      }
+      .swatch .label {
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function swatch(bg) {
+        document.writeln("<div class=\"swatch\">");
+          document.writeln("<div class=\"sample\" style=\"background: "+bg+"\"></div>");
+          document.writeln("<div class=\"label\">"+bg+"</div>");
+        document.writeln("</div>");
+      }
+      swatch("#fff");
+      swatch("#000");
+    </script>
+  </body>
+</html>

@@ -18,3 +18,4 @@ exclude:
   - .bundle
   - bin
   - vendor
+  - swatches.html

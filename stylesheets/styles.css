@@ -647,24 +647,10 @@ nav ul a:hover {
   color: #999;
 }
 
-/* Fonts */
-
-body.fa { font-family: 'Walter Turncoat', cursive; }
-body.fb { font: 22px / 30px 'Amatic SC', cursive; }
-body.fb h1 { font-size: 34px; }
-body.fb h2 { font-size: 30px; }
-body.fb h3 { font-size: 24px; }
-body.fb a small { font-size: 15px; }
-body.fb header p { font-size: 24px; }
-body.fc { font-family: 'Shadows Into Light Two', cursive; }
-body.fd { font-family: 'Architects Daughter', cursive; }
-body.fe { font-family: 'Coming Soon', cursive; }
-body.ff { font-family: 'Annie Use Your Telescope', cursive; }
-
 /* The styles */
 
 body {
-  font: 14px/22px;
+  font: 14px/22px 'Walter Turncoat', sans-serif;
   font-weight: 300;
   margin: 0px;
   padding: 0px 0 20px 0px;

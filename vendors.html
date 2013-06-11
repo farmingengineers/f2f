@@ -78,5 +78,5 @@ vendors:
   {% if vendor.url %}<a href="{{vendor.url}}">{% endif %}
     {{ vendor.dba }}
   {% if vendor.url %}</a>{% endif %}</h4>
-<p>{{ vendor.description }}</p>
+<p>{{ vendor.description | join: '<br/>' }}</p>
 {% endfor %}

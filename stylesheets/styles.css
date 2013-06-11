@@ -951,6 +951,10 @@ footer {
     width: auto;
   }
 
+  .map-embed {
+    width: 460px;
+  }
+
   header ul, header p.view {
     position: static;
   }
@@ -972,6 +976,10 @@ footer {
 
   section {
     margin-top: 5px;
+  }
+
+  .map-embed {
+    width: 240px;
   }
 
   #banner {

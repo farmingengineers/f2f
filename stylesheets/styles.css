@@ -822,6 +822,11 @@ small {
   font-size: 12px;
 }
 
+.map-embed {
+  width: 590px;
+  height: 250px;
+}
+
 nav {
   width: 230px;
   position: fixed;

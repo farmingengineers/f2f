@@ -1,4 +1,14 @@
 ---
 layout: default
+vendors:
+- name: Us
+  description: Farms things
+- name: Them
+  description: Bakes things
 ---
 <h3>Our Vendors</h3>
+
+{% for vendor in page.vendors %}
+<h4>{{ vendor.name }}</h4>
+<p>{{ vendor.description }}</p>
+{% endfor %}

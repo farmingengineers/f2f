@@ -536,57 +536,6 @@ header p {
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
 }
 
-#banner {
-  background: #ffcc00;
-  border: 1px solid #f0b500;
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-}
-
-#banner .button {
-  border: 1px solid #dba500;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
-  background: -webkit-linear-gradient(#ffe788, #ffce38);
-  background: -moz-linear-gradient(#ffe788, #ffce38);
-  background: -o-linear-gradient(#ffe788, #ffce38);
-  background: -ms-linear-gradient(#ffe788, #ffce38);
-  background: linear-gradient(#ffe788, #ffce38);
-  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #FFE788;
-}
-
-#banner .button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
-  background: -webkit-linear-gradient(#ffe788, #ffe788);
-  background: -moz-linear-gradient(#ffe788, #ffe788);
-  background: -o-linear-gradient(#ffe788, #ffe788);
-  background: -ms-linear-gradient(#ffe788, #ffe788);
-  background: linear-gradient(#ffe788, #ffe788);
-  background-color: #ffeca0;
-}
-
-#banner .fork {
-  background-color: #FFE788;
-}
-
-#banner .downloads span {
-  color: #9d7f0d;
-  text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
-}
-
-#banner ul li a.button {
-  background-color: #FFE788;
-}
-
-#banner #logo {
-  background: url(../images/octocat-logo.png);
-}
-
 section {
   background: #fbfbfb;
   border: 1px solid #cbcbcb;
@@ -733,77 +682,6 @@ header p {
   margin: 0px;
 }
 
-#banner {
-  z-index: 100;
-  left: 0;
-  right: 50%;
-  height: 50px;
-  margin-right: -382px;
-  position: fixed;
-  top: 115px;
-  -moz-border-radius: 0px 2px 2px 0px;
-  -webkit-border-radius: 0px 2px 2px 0px;
-  -o-border-radius: 0px 2px 2px 0px;
-  -ms-border-radius: 0px 2px 2px 0px;
-  -khtml-border-radius: 0px 2px 2px 0px;
-  border-radius: 0px 2px 2px 0px;
-  padding-right: 10px;
-}
-#banner .button {
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  border-radius: 2px;
-  margin-left: 5px;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  color: #333;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-}
-#banner .fork {
-  position: fixed;
-  left: 50%;
-  margin-left: -325px;
-  padding: 10px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-}
-#banner .downloads {
-  float: right;
-  margin: 0 45px 0 0;
-}
-#banner .downloads span {
-  float: left;
-  line-height: 52px;
-  font-size: 90%;
-  text-transform: uppercase;
-}
-#banner ul {
-  list-style: none;
-  height: 40px;
-  padding: 0;
-  float: left;
-  margin-left: 10px;
-}
-#banner ul li {
-  display: inline;
-}
-#banner #logo {
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  right: 7px;
-  top: 7px;
-  display: block;
-}
-
 section {
   width: 590px;
   padding: 30px 30px 50px 30px;
@@ -886,16 +764,6 @@ footer {
     -ms-text-overflow: ellipsis;
   }
 
-  #banner {
-    width: 100%;
-  }
-  #banner .downloads {
-    margin-right: 60px;
-  }
-  #banner #logo {
-    margin-right: 15px;
-  }
-
   section {
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
@@ -934,17 +802,6 @@ footer {
     display: none;
   }
 
-  #banner {
-    top: 80px;
-  }
-  #banner .fork {
-    float: left;
-    display: inline-block;
-    margin-left: 0px;
-    position: fixed;
-    left: 20px;
-  }
-
   section {
     margin-top: 130px;
     margin-bottom: 0px;
@@ -980,10 +837,6 @@ footer {
 
   .map-embed {
     width: 240px;
-  }
-
-  #banner {
-    display: none;
   }
 
   header ul {

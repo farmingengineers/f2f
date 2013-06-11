@@ -671,11 +671,6 @@ header {
 header h1 {
   font: 40px/48px;
   margin: 0px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
 }
 header p {
   font-size: 18px;
@@ -755,13 +750,6 @@ footer {
   header, section, footer {
     float: none;
   }
-  header h1, section h1, footer h1 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
-  }
 
   section {
     border: 1px solid #e5e5e5;
@@ -791,11 +779,6 @@ footer {
   }
   header h1 {
     font-size: 32px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
   }
   header p {
     display: none;
@@ -823,11 +806,6 @@ footer {
   }
   header h1 {
     font-size: 24px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
   }
 
   section {

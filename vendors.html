@@ -1,14 +1,82 @@
 ---
 layout: default
 vendors:
-- name: Us
-  description: Farms things
-- name: Them
-  description: Bakes things
+-
+  dba: Aspire Indiana Harvestland Farm
+  url: http://www.yourmarketgarden.org/
+-
+  dba: Bakin'
+-
+  dba: Barnyard Baby
+  url: http://www.barnyardbaby.com/
+-
+  dba: Bluffwood Creek Co-Op
+  name: Rob
+  url: http://www.bluffwoodcreek.com/
+  image:
+  description:
+-
+  dba: Borre Brothers' Famous Fermented Vegetables
+  url: https://www.facebook.com/BorreBrothers
+-
+  dba: Bridgeton Mill
+  url: http://bridgetonmill.com/
+-
+  dba: Countryside Orchard and Garden
+  url: https://www.facebook.com/pages/Countryside-Orchard-and-Garden/134361849972949
+  name: Stan and Judy
+-
+  dba: End of the Trail Ranch
+-
+  dba: Farming Engineers
+  url: http://burkefarm.wordpress.com/
+  name: Lisa and Matt
+-
+  dba: Full Circle Farm
+  name: Paul and Betsy
+  url: http://thefullcirclefarm.com/
+  image:
+  description:
+-
+  dba: Litterally Divine Toffee and Truffles
+  url: http://www.litterallydivinetoffee.com/
+-
+  dba: Ludwig’s Farmstead Creamery
+  url: http://www.ludwigfarmsteadcreamery.com/
+-
+  dba: LuvURCoconuts
+  name: Danielle
+  url: http://www.etsy.com/shop/LuvURCoconuts
+-
+  dba: Magnolia Mill Farm
+  name: Dan
+-
+  dba: Pet Lover's Organic Bakery
+  name:
+  url: http://www.petloversorganic.com/
+-
+  dba: Redwine Family Farms
+  name: Jacob
+-
+  dba: Simple Taste
+  name: Jenny
+  url: http://www.simple-taste.com/
+-
+  dba: The Swiss Connection
+  name: Alan, Mary, and Kate
+  url: http://www.swissconnectioncheese.com/
+-
+  dba: Valentine Hill Farm
+  name: Bill and Maria
+  url: http://www.valentinehillfarm.com/
+
 ---
 <h3>Our Vendors</h3>
 
 {% for vendor in page.vendors %}
-<h4>{{ vendor.name }}</h4>
+<h4>
+  {% if vendor.url %}<a href="{{vendor.url}}">{% endif %}
+    {{ vendor.dba }}
+  {% if vendor.url %}</a>{% endif %}</h4>
 <p>{{ vendor.description }}</p>
 {% endfor %}

@@ -691,9 +691,16 @@ small {
   font-size: 12px;
 }
 
-.map-embed {
+.embedded-media {
   width: 590px;
+}
+
+.embedded-media.map {
   height: 250px;
+}
+
+.embedded-media.photos {
+  height: 442px;
 }
 
 nav {
@@ -786,8 +793,12 @@ footer {
     width: auto;
   }
 
-  .map-embed {
+  .embedded-media {
     width: 400px;
+  }
+
+  .embedded-media.photos {
+    height: 300px;
   }
 
   header ul, header p.view {
@@ -808,8 +819,12 @@ footer {
     margin-top: 5px;
   }
 
-  .map-embed {
+  .embedded-media {
     width: 240px;
+  }
+
+  .embedded-media.photos {
+    height: 180px;
   }
 
   header ul {

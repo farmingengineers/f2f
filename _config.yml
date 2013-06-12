@@ -4,6 +4,9 @@ subtitle: at Normandy Farms
 author: Friends of the Green Market
 simple_search: http://google.com/search
 
+# For cache busting
+asset_version: 1
+
 # From https://help.github.com/articles/using-jekyll-with-pages
 safe: true
 lsi: false

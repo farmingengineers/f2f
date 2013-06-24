@@ -80,6 +80,9 @@ var uploadFile = function(localFile, remoteFile) {
     } else {
       console.log("[" + finished + "/" + started + "] " + remoteFile + ": success");
     }
+    if(remote.complete && finished == started) {
+      remote._ftp.raw.quit();
+    }
   });
 };
 
@@ -107,3 +110,4 @@ var uploadDirectory = function(localDir, remoteDir) {
   });
 };
 uploadDirectory(params.build, ftpRoot);
+remote.complete = true;

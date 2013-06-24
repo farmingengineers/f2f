@@ -16,10 +16,12 @@ permalink: /blog/:year/:month/:day/:title
 paginate: 5
 
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - README.md
   - .bundle
   - bin
+  - params.json
   - vendor
   - swatches.html

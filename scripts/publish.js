@@ -17,6 +17,8 @@ var ftpConfig = {
 };
 var ftpRoot = path.join("/", params.repo);
 
+console.log(ftpConfig);
+
 var remote = {
   _ftp: new Ftp(ftpConfig),
 

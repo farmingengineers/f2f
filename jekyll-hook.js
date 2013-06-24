@@ -20,7 +20,6 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
 
     // Queue request handler
     tasks.defer(function(req, res, cb) {
-        console.log(req.body.payload);
         var data = JSON.parse(req.body.payload);
         var token = req.params.token;
         var branch = req.params.branch;
@@ -37,6 +36,15 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
             return;
         }
 
+        // Process webhook data into params for scripts
+        /* repo   */ params.push(data.repo);
+        /* branch */ params.push(data.branch);
+        /* owner  */ params.push(data.owner);
+        /* giturl */ params.push(data.repository.url + '.git');
+        /* source */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'code');
+        /* build  */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'site');
+        console.log(params);
+
         // End early if not permitted account
         if (config.accounts.indexOf(data.owner) === -1) {
             console.log(data.owner + ' is not an authorized account.');
@@ -50,14 +58,6 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
             if (typeof cb === 'function') cb();
             return;
         }
-
-        // Process webhook data into params for scripts
-        /* repo   */ params.push(data.repo);
-        /* branch */ params.push(data.branch);
-        /* owner  */ params.push(data.owner);
-        /* giturl */ params.push('git@' + config.gh_server + ':' + data.owner + '/' + data.repo + '.git');
-        /* source */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'code');
-        /* build  */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'site');
 
         // Run build script
         run(config.scripts.build, params, function(err) {

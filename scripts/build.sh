@@ -19,8 +19,8 @@ fi
 
 # Git checkout appropriate branch, pull latest code
 cd $source
-git checkout $branch
-git pull origin $branch
+git fetch origin
+git checkout origin/$branch
 cd -
 
 # Run jekyll

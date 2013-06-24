@@ -20,6 +20,7 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
 
     // Queue request handler
     tasks.defer(function(req, res, cb) {
+        console.log(req.body.payload);
         var data = JSON.parse(req.body.payload);
         var token = req.params.token;
         var branch = req.params.branch;

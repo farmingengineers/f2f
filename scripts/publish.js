@@ -48,11 +48,37 @@ var remote = {
     }
   },
 
-  put: function(localFile, remoteFile) {
+  put: function(localFile, remoteFile, cb) {
     remote.mkDir(path.dirname(remoteFile), function(err) {
-      console.log(localFile + " --> " + remoteFile);
+      if(err) {
+        cb(err);
+      } else {
+        fs.readFile(localFile, function(err, data) {
+          if(err) {
+            cb(err)
+          } else {
+            remote._ftp.put(remoteFile, data, cb);
+          }
+        });
+      }
     });
   }
+};
+
+var started = 0;
+var finished = 0;
+
+var uploadFile = function(localFile, remoteFile) {
+  started += 1;
+  console.log("[" + started + "] " + localFile + " --> " + remoteFile);
+  remote.put(localFile, remoteFile, function(err) {
+    finished += 1;
+    if(err) {
+      console.error("[" + finished + "/" + started + "] " + remoteFile + ": " + err);
+    } else {
+      console.log("[" + finished + "/" + started + "] " + remoteFile + ": success");
+    }
+  });
 };
 
 var uploadDirectory = function(localDir, remoteDir) {
@@ -70,7 +96,7 @@ var uploadDirectory = function(localDir, remoteDir) {
             if(stat.isDirectory()) {
               uploadDirectory(localPath, remotePath);
             } else {
-              remote.put(localPath, remotePath);
+              uploadFile(localPath, remotePath);
             }
           }
         });

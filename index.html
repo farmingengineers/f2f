@@ -42,16 +42,18 @@ on the corner of <a href="http://goo.gl/maps/03Ef4">79th and Marsh Rd</a>
 </small>
 
 <script>
-  Galleria.loadTheme("/galleria/themes/classic/galleria.classic.min.js");
-  Galleria.run("#galleria", {
-    flickr: "set:72157634087939815",
-    autoplay: 7000,
-    debug: false,
-    initialTransition: 'fade',
-    showCounter: false,
-    showImagenav: false,
-    showInfo: false,
-    thumbnails: false,
-    transitionSpeed: 1000
+  $(function() {
+    Galleria.loadTheme("/galleria/themes/classic/galleria.classic.min.js");
+    Galleria.run("#galleria", {
+      flickr: "set:72157634087939815",
+      autoplay: 7000,
+      debug: false,
+      initialTransition: 'fade',
+      showCounter: false,
+      showImagenav: false,
+      showInfo: false,
+      thumbnails: false,
+      transitionSpeed: 1000
+    });
   });
 </script>

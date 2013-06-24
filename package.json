@@ -18,6 +18,7 @@
     "dependencies": {
         "express": "3.x",
         "emailjs": "0.3.4",
+        "jsftp": "0.5.9",
         "queue-async": "1.0.x"
     },
     "private": true

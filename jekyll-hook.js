@@ -43,7 +43,6 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
         /* giturl */ params.push(data.repository.url + '.git');
         /* source */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'code');
         /* build  */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'site');
-        console.log(params);
 
         // End early if not permitted account
         if (config.accounts.indexOf(data.owner) === -1) {
@@ -97,6 +96,7 @@ app.listen(port);
 console.log('Listening on port ' + port);
 
 function run(file, params, cb) {
+    console.log([file, params]);
     var process = spawn(file, params);
 
     process.stdout.on('data', function (data) {

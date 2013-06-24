@@ -24,6 +24,4 @@ git checkout origin/$branch
 cd -
 
 # Run jekyll
-cd $source
 jekyll $source $build --no-server --no-auto
-cd -

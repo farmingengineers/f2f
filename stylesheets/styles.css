@@ -556,7 +556,7 @@ nav ul a:hover {
 /* The styles */
 
 body {
-  font: 14px/22px 'Walter Turncoat', sans-serif;
+  font: 18px/26px 'Walter Turncoat', sans-serif;
   font-weight: 300;
   margin: 0px;
   padding: 0px 0 20px 0px;
@@ -575,16 +575,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 28px;
 }
 
 a {

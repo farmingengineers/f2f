@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+ruby '1.9.3'
+gem 'jekyll', '0.11.0'
+gem 'liquid'
+gem 'maruku'

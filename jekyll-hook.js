@@ -13,7 +13,7 @@ var mailer  = email.server.connect(config.email);
 app.use(express.bodyParser());
 
 // Receive webhook post
-app.post('/hooks/jekyll/:branch', function(req, res) {
+app.post('/hooks/jekyll/:token/:branch', function(req, res) {
 
     // Close connection
     res.send(202);
@@ -21,6 +21,7 @@ app.post('/hooks/jekyll/:branch', function(req, res) {
     // Queue request handler
     tasks.defer(function(req, res, cb) {
         var data = JSON.parse(req.body.payload);
+        var token = req.params.token;
         var branch = req.params.branch;
         var params = [];
 
@@ -28,6 +29,12 @@ app.post('/hooks/jekyll/:branch', function(req, res) {
         data.repo = data.repository.name;
         data.branch = data.ref.split('/')[2];
         data.owner = data.repository.owner.name;
+
+        if (process.env.ACCESS_KEY && (process.env.ACCESS_KEY != token)) {
+            console.log('Bad key');
+            if (typeof cb === 'function') cb();
+            return;
+        }
 
         // End early if not permitted account
         if (config.accounts.indexOf(data.owner) === -1) {

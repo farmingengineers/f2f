@@ -12,4 +12,4 @@ giturl=$4
 source=$5
 build=$6
 
-echo todo: ftp source to fatcow, creds in environment
+node `dirname $0`/publish.js $*

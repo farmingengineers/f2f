@@ -17,8 +17,6 @@ var ftpConfig = {
 };
 var ftpRoot = path.join("/", params.repo);
 
-console.log(ftpConfig);
-
 var remote = {
   _ftp: new Ftp(ftpConfig),
 
@@ -66,11 +64,6 @@ var remote = {
     });
   }
 };
-
-remote._ftp.emitter
-.on('command', function(data) { console.log(data); } )
-.on('connect', function() { console.log("CONNECTED"); })
-.on('disconnect', function() { console.log("DISCONNECTED") });
 
 var started = 0;
 var finished = 0;

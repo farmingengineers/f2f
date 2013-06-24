@@ -36,14 +36,6 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
             return;
         }
 
-        // Process webhook data into params for scripts
-        /* repo   */ params.push(data.repo);
-        /* branch */ params.push(data.branch);
-        /* owner  */ params.push(data.owner);
-        /* giturl */ params.push(data.repository.url + '.git');
-        /* source */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'code');
-        /* build  */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'site');
-
         // End early if not permitted account
         if (config.accounts.indexOf(data.owner) === -1) {
             console.log(data.owner + ' is not an authorized account.');
@@ -57,6 +49,14 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
             if (typeof cb === 'function') cb();
             return;
         }
+
+        // Process webhook data into params for scripts
+        /* repo   */ params.push(data.repo);
+        /* branch */ params.push(data.branch);
+        /* owner  */ params.push(data.owner);
+        /* giturl */ params.push(data.repository.url + '.git');
+        /* source */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'code');
+        /* build  */ params.push(config.temp + '/' + data.owner + '/' + data.repo + '/' + data.branch + '/' + 'site');
 
         // Run build script
         run(config.scripts.build, params, function(err) {

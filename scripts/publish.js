@@ -65,7 +65,7 @@ var remote = {
   }
 };
 
-remote._ftp.on('connect', function() { console.log("CONNECTED"); }).on('disconnect', "DISCONNECTED");
+remote._ftp.emitter.on('connect', function() { console.log("CONNECTED"); }).on('disconnect', "DISCONNECTED");
 
 var started = 0;
 var finished = 0;

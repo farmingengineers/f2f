@@ -469,7 +469,7 @@ table {
 
 body {
   color: rgb(57,47,48);
-  background: url("../images/bg-body.jpg") #99b5bc;
+  background: url("../images/bg-body.jpg") #b7c1c1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -519,7 +519,7 @@ dt {
 }
 
 header {
-  background: url("../images/bg-head.jpg") center #523c38;
+  background: url("../images/bg-head.jpg") #523c38;
   -moz-box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.75);
   -o-box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.75);

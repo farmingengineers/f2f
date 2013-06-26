@@ -731,13 +731,12 @@ nav ul li.tag-h2 + .tag-h1 {
 }
 
 footer {
-  width: 180px;
-  position: fixed;
-  left: 50%;
-  margin-left: -530px;
-  bottom: 20px;
-  text-align: right;
-  line-height: 16px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: auto;
 }
 
 @media print, screen and (max-width: 1060px) {
@@ -760,15 +759,6 @@ footer {
     padding: 20px auto;
     margin: 190px auto 20px;
     max-width: 600px;
-  }
-
-  footer {
-    text-align: center;
-    margin: 20px auto;
-    position: relative;
-    left: auto;
-    bottom: auto;
-    width: auto;
   }
 }
 @media print, screen and (max-width: 720px) {

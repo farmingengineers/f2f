@@ -9,7 +9,7 @@ require 'nokogiri'
 
 def main
   Dir['_raw/*'].each do |raw_path|
-    output_path = "_posts/#{File.basename(raw_path, '.txt')}.md"
+    output_path = "_posts/#{File.basename(raw_path, '.txt')}.html"
     puts "#{raw_path} -> #{output_path}"
     File.open output_path, 'w' do |f|
       convert raw_path, f
@@ -51,16 +51,28 @@ end
 
 def write_content(out, mail, html)
   main = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[2]/table/tr/td')
-  main.css('table').each do |section|
-    title = section.css('div[align=center]').text.gsub(/\s+/, ' ').strip
-    out.puts "## #{title}", "" unless title.empty?
-    puts title.inspect
-    section.css('p').each do |p|
-      text = p.text.gsub(/\s+/, ' ').strip
-      out.puts text, "" unless text.empty?
-      puts text.inspect[0,100] unless text.empty?
+  res = Nokogiri::HTML::Builder.new do |h|
+    h.div do
+      main.css('table').each do |section|
+        title_element = section.css('div[align=center]')
+        title_element = section.css('div[style]') if title_element.empty?
+        title = title_element.text.gsub(/\s+/, ' ').strip
+        unless title.empty?
+          h.h4 title
+          title_element.remove
+        end
+        puts "title: " + title.inspect
+        section.css('p').each do |p|
+          text = p.text.gsub(/\s+/, ' ').strip
+          if text =~ /[a-z]/
+            h.p text
+            puts text.inspect[0,100]
+          end
+        end
+      end
     end
   end
+  out.puts res.doc.root.children
 end
 
 

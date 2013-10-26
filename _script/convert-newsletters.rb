@@ -4,8 +4,10 @@
 #/ Converts all newsletters in _raw/ to posts in _posts/
 
 require 'bundler/setup'
+require 'digest/md5'
 require 'mail'
 require 'nokogiri'
+require 'net/http'
 
 def main(*files)
   files = Dir['_raw/*'] if files.empty?
@@ -42,7 +44,7 @@ def write_front_matter(out, mail, html)
       image = item && item.css('img').first
       caption = item && get_clean_text(item)
       if spacers_found == 3 && item && image && caption
-        images.push 'url' => image['src'], 'caption' => caption
+        images.push 'url' => make_image_local(image['src']), 'caption' => caption
       end
     end
   end
@@ -112,7 +114,7 @@ def write_stripped(h, parent)
         write_stripped(h, node)
       end
     elsif node.name.downcase == 'img' && node['src']
-      h.div { h.img 'src' => node['src'] }
+      h.div { h.img 'src' => make_image_local(node['src']) }
     else
       write_stripped(h, node)
     end
@@ -139,6 +141,17 @@ rescue ArgumentError
   s = element.text.dup
   s.force_encoding 'BINARY'
   s.gsub(/\s+/, ' ').strip
+end
+
+def make_image_local(url)
+  path = "images/newsletters/#{Digest::MD5.hexdigest(url)}#{File.extname(url)}"
+  unless File.exists?(path)
+    File.write(path, Net::HTTP.get(URI(url)))
+  end
+  '/' + path
+rescue => e
+  puts e
+  url
 end
 
 

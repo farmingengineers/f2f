@@ -83,63 +83,6 @@ def write_dat(h, node)
   end
 end
 
-def write_section(h, section)
-  h.div :class => 'newsletter-section' do
-    write_section_title(h, section)
-    write_section_body(h, section)
-  end
-end
-
-def write_section_title(h, section)
-  title_elements = section.css('div[align=center]')
-  title_elements = section.css('div[style]') if title_elements.empty?
-  title_text = ''
-  title_elements.each do |title_element|
-    if title_element.css('img').empty?
-      title = get_clean_text(title_element)
-      unless title.empty?
-        title_text << title
-        title_element.remove
-      end
-    end
-  end
-  h.h4(title_text) if title_text =~ /[a-z]/i
-end
-
-def write_section_body(h, section)
-  ps = section.xpath('.//p|.//table')
-  ps.each do |p|
-    if pred = p.previous_element
-      if pred.name == 'span' && pred.css('p').empty? && pred.text =~ /[a-z]/
-        h.p do
-          write_stripped(h, pred)
-        end
-      end
-    end
-    if p.text =~ /[a-z]/
-      h.p do
-        write_stripped(h, p)
-      end
-    end
-  end
-end
-
-def write_stripped(h, parent)
-  parent.children.each do |node|
-    if node.text?
-      h.text(node.text)
-    elsif node.name.downcase == 'a' && node['href']
-      h.a 'href' => get_real_location(node['href']) do
-        write_stripped(h, node)
-      end
-    elsif node.name.downcase == 'img' && node['src']
-      h.div { h.img 'src' => make_image_local(node['src']) }
-    else
-      write_stripped(h, node)
-    end
-  end
-end
-
 Utf8Nbsp = Nokogiri::HTML('<span>&nbsp;</span>').css('span').text
 
 def get_clean_text(element)

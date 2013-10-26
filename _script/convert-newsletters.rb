@@ -70,8 +70,7 @@ def write_section(h, section)
 end
 
 def write_section_title(h, section)
-  title_element = section.css('div[align=center]')
-  title_element = section.css('div[style]') if title_element.empty?
+  title_element = section.css('div[align=center]').first || section.css('div[style]')
   title = get_clean_text(title_element)
   unless title.empty?
     h.h4 title
@@ -98,7 +97,7 @@ def write_stripped(h, parent)
         write_stripped(h, node)
       end
     elsif node.name.downcase == 'img' && node['src']
-      h.img 'src' => node['src']
+      h.div { h.img 'src' => node['src'] }
     else
       write_stripped(h, node)
     end

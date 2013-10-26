@@ -111,8 +111,22 @@ def write_stripped(h, parent)
   end
 end
 
+Utf8Nbsp = ' '
+
 def get_clean_text(element)
-  element.text.gsub(/\s+/, ' ').strip
+  s = element.text.dup
+  begin
+    s = s.gsub('&nbsp;', ' ')
+    s = s.gsub(Utf8Nbsp, ' ') if s.encoding == Utf8Nbsp.encoding
+    s = s.gsub(/\s+/, ' ')
+  rescue ArgumentError
+    original_encoding = s.encoding
+    s.force_encoding 'BINARY'
+    if s.encoding != original_encoding
+      retry
+    end
+  end
+  s.strip
 rescue ArgumentError
   s = element.text.dup
   s.force_encoding 'BINARY'

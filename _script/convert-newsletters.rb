@@ -111,7 +111,7 @@ def write_stripped(h, parent)
   end
 end
 
-Utf8Nbsp = ' '
+Utf8Nbsp = Nokogiri::HTML('<span>&nbsp;</span>').css('span').text
 
 def get_clean_text(element)
   s = element.text.dup

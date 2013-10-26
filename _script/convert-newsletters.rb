@@ -82,26 +82,22 @@ def write_section_body(h, section)
   section.css('p').each do |p|
     if p.text =~ /[a-z]/
       h.p do
-        p.children.each do |child|
-          write_stripped(h, child)
-        end
+        write_stripped(h, p)
       end
     end
   end
 end
 
-def write_stripped(h, node)
-  if node.text?
-    h.text(node.text)
-  elsif node.name.downcase == 'a' && node['href']
-    h.a 'href' => node['href'] do
-      node.children.each do |child|
-        write_stripped(h, child)
+def write_stripped(h, parent)
+  parent.children.each do |node|
+    if node.text?
+      h.text(node.text)
+    elsif node.name.downcase == 'a' && node['href']
+      h.a 'href' => node['href'] do
+        write_stripped(h, node)
       end
-    end
-  else
-    node.children.each do |child|
-      write_stripped(h, child)
+    else
+      write_stripped(h, node)
     end
   end
 end

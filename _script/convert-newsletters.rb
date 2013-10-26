@@ -52,27 +52,62 @@ end
 def write_content(out, mail, html)
   main = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[2]/table/tr/td')
   res = Nokogiri::HTML::Builder.new do |h|
-    h.div do
+    h.body do
       main.css('table').each do |section|
-        title_element = section.css('div[align=center]')
-        title_element = section.css('div[style]') if title_element.empty?
-        title = title_element.text.gsub(/\s+/, ' ').strip
-        unless title.empty?
-          h.h4 title
-          title_element.remove
-        end
-        puts "title: " + title.inspect
-        section.css('p').each do |p|
-          text = p.text.gsub(/\s+/, ' ').strip
-          if text =~ /[a-z]/
-            h.p text
-            puts text.inspect[0,100]
-          end
-        end
+        write_section(h, section)
       end
     end
   end
   out.puts res.doc.root.children
+end
+
+def write_section(h, section)
+  h.div :class => 'newsletter-section' do
+    write_section_title(h, section)
+    write_section_body(h, section)
+  end
+end
+
+def write_section_title(h, section)
+  title_element = section.css('div[align=center]')
+  title_element = section.css('div[style]') if title_element.empty?
+  title = get_clean_text(title_element)
+  unless title.empty?
+    h.h4 title
+    title_element.remove
+  end
+end
+
+def write_section_body(h, section)
+  section.css('p').each do |p|
+    if p.text =~ /[a-z]/
+      h.p do
+        p.children.each do |child|
+          write_stripped(h, child)
+        end
+      end
+    end
+  end
+end
+
+def write_stripped(h, node)
+  if node.text?
+    h.text(node.text)
+  elsif node.name.downcase == 'a' && node['href']
+    h.a 'href' => node['href'] do
+      node.children.each do |child|
+        write_stripped(h, child)
+      end
+    end
+  else
+    node.children.each do |child|
+      write_stripped(h, child)
+    end
+  end
+end
+
+def get_clean_text(element)
+  element.text.gsub(/\s+/, ' ').strip
 end
 
 

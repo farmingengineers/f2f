@@ -39,7 +39,7 @@ def write_front_matter(out, mail, html)
     if e['id'] && e['id'].start_with?('content_LETTER.BLOCK')
       item = e#.css('p').first
       image = item && item.css('img').first
-      caption = item && item.text.gsub(/\s+/, ' ').strip
+      caption = item && get_clean_text(item)
       if spacers_found == 3 && item && image && caption
         images.push 'url' => image['src'], 'caption' => caption
       end
@@ -104,6 +104,10 @@ end
 
 def get_clean_text(element)
   element.text.gsub(/\s+/, ' ').strip
+rescue ArgumentError
+  s = element.text.dup
+  s.force_encoding 'BINARY'
+  s.gsub(/\s+/, ' ').strip
 end
 
 

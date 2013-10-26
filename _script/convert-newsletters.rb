@@ -7,8 +7,9 @@ require 'bundler/setup'
 require 'mail'
 require 'nokogiri'
 
-def main
-  Dir['_raw/*'].each do |raw_path|
+def main(*files)
+  files = Dir['_raw/*'] if files.empty?
+  files.each do |raw_path|
     output_path = "_posts/#{File.basename(raw_path, '.txt')}.html"
     puts "#{raw_path} -> #{output_path}"
     File.open output_path, 'w' do |f|
@@ -111,4 +112,4 @@ rescue ArgumentError
 end
 
 
-main
+main(*ARGV)

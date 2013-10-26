@@ -739,6 +739,14 @@ footer {
   width: auto;
 }
 
+.newsletter-image {
+  display: inline-block;
+  border: solid 1px rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.1);
+  margin: 1em;
+  padding: 1em;
+}
+
 @media print, screen and (max-width: 1060px) {
   div.wrapper {
     width: auto;

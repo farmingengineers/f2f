@@ -6,8 +6,10 @@ layout: default
 
 {{content}}
 
+<hr>
+
 {% for image in page.images %}
-<div>
+<div class="newsletter-image">
   <p><img src="{{ image.url }}"></p>
   <p>{{ image.caption }}</p>
 </div>

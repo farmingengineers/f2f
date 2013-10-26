@@ -50,7 +50,17 @@ def write_front_matter(out, mail, html)
 end
 
 def write_content(out, mail, html)
-  out.puts "# todo"
+  main = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[2]/table/tr/td')
+  main.css('table').each do |section|
+    title = section.css('div[align=center]').text.gsub(/\s+/, ' ').strip
+    out.puts "## #{title}", "" unless title.empty?
+    puts title.inspect
+    section.css('p').each do |p|
+      text = p.text.gsub(/\s+/, ' ').strip
+      out.puts text, "" unless text.empty?
+      puts text.inspect[0,100] unless text.empty?
+    end
+  end
 end
 
 

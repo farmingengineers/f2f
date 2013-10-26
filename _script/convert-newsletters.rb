@@ -70,12 +70,19 @@ def write_section(h, section)
 end
 
 def write_section_title(h, section)
-  title_element = section.css('div[align=center]').first || section.css('div[style]')
-  title = get_clean_text(title_element)
-  unless title.empty?
-    h.h4 title
-    title_element.remove
+  title_elements = section.css('div[align=center]')
+  title_elements = section.css('div[style]') if title_elements.empty?
+  title_text = ''
+  title_elements.each do |title_element|
+    if title_element.css('img').empty?
+      title = get_clean_text(title_element)
+      unless title.empty?
+        title_text << title
+        title_element.remove
+      end
+    end
   end
+  h.h4(title_text) if title_text =~ /[a-z]/i
 end
 
 def write_section_body(h, section)

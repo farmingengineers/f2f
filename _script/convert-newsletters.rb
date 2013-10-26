@@ -56,12 +56,31 @@ def write_content(out, mail, html)
   main = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[2]/table/tr/td')
   res = Nokogiri::HTML::Builder.new do |h|
     h.body do
-      main.css('table').each do |section|
-        write_section(h, section)
-      end
+      write_dat(h, main)
     end
   end
   out.puts res.doc.root.children
+end
+
+def write_dat(h, node)
+  node.children.each do |child|
+    if child.text?
+      text = get_clean_text(child)
+      h.text(text.empty? ? ' ' : text)
+    elsif child.name == 'a' && child['href']
+      h.a 'href' => get_real_location(child['href']) do
+        write_dat(h, child)
+      end
+    elsif child.name == 'img' && child['src']
+      h.div { h.img 'src' => make_image_local(child['src']) }
+    elsif child.name == 'span' && child['style'] =~ /16pt/ && child.css('img').empty?
+      h.h4 { h.text(get_clean_text(child)) }
+    elsif child.name == 'p'
+      h.p { write_dat(h, child) }
+    else
+      write_dat(h, child)
+    end
+  end
 end
 
 def write_section(h, section)
@@ -134,9 +153,11 @@ def get_clean_text(element)
     s.force_encoding 'BINARY'
     if s.encoding != original_encoding
       retry
+    else
+      raise
     end
   end
-  s.strip
+  s
 rescue ArgumentError
   s = element.text.dup
   s.force_encoding 'BINARY'
@@ -150,7 +171,7 @@ def make_image_local(url)
   end
   '/' + path
 rescue => e
-  puts e
+  puts "Unable to create local image (#{e})"
   url
 end
 
@@ -160,18 +181,23 @@ def get_real_location(url)
   cc_locations = (YAML.load_file(HrefCache) rescue nil)
   cc_locations = {} unless cc_locations.is_a?(Hash)
   cc_locations.fetch(url) do
-    response = Net::HTTP.get_response(URI(url))
-    if response.code.start_with?('3') && location = response['Location']
-      cc_locations[url] = location
-      File.write(HrefCache, YAML.dump(cc_locations))
-      location
+    uri = URI(url)
+    if uri.scheme == 'https' || uri.scheme == 'http'
+      response = Net::HTTP.get_response(uri)
+      if response.code.start_with?('3') && location = response['Location']
+        cc_locations[url] = location
+        File.write(HrefCache, YAML.dump(cc_locations))
+        location
+      else
+        puts "Got #{response.code} from #{url}"
+        url
+      end
     else
-      puts "Got #{response.code} from #{url}"
       url
     end
   end
 rescue => e
-  puts e
+  puts "Unable to get real location for #{url} (#{e})"
   url
 end
 

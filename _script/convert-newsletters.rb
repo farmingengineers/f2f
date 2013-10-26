@@ -86,7 +86,15 @@ def write_section_title(h, section)
 end
 
 def write_section_body(h, section)
-  section.xpath('.//p|.//table').each do |p|
+  ps = section.xpath('.//p|.//table')
+  if ps.first && first = ps.first.previous_element
+    if first.text =~ /[a-z]/
+      h.p do
+        write_stripped(h, first)
+      end
+    end
+  end
+  ps.each do |p|
     if p.text =~ /[a-z]/
       h.p do
         write_stripped(h, p)

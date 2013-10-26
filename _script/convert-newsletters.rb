@@ -110,7 +110,7 @@ def write_stripped(h, parent)
     if node.text?
       h.text(node.text)
     elsif node.name.downcase == 'a' && node['href']
-      h.a 'href' => node['href'] do
+      h.a 'href' => get_real_location(node['href']) do
         write_stripped(h, node)
       end
     elsif node.name.downcase == 'img' && node['src']
@@ -149,6 +149,27 @@ def make_image_local(url)
     File.write(path, Net::HTTP.get(URI(url)))
   end
   '/' + path
+rescue => e
+  puts e
+  url
+end
+
+HrefCache = '_cc_hrefs.yml'
+
+def get_real_location(url)
+  cc_locations = (YAML.load_file(HrefCache) rescue nil)
+  cc_locations = {} unless cc_locations.is_a?(Hash)
+  cc_locations.fetch(url) do
+    response = Net::HTTP.get_response(URI(url))
+    if response.code.start_with?('3') && location = response['Location']
+      cc_locations[url] = location
+      File.write(HrefCache, YAML.dump(cc_locations))
+      location
+    else
+      puts "Got #{response.code} from #{url}"
+      url
+    end
+  end
 rescue => e
   puts e
   url

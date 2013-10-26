@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h3>{{ page.title }}</h3>
+
+{% for image in page.images %}
+<div>
+  <p>img src="{{ image.url }}"</p>
+  <p>{{ image.caption }}</p>
+</div>
+{% endfor %}
+
+{{content}}

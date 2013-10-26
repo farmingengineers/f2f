@@ -80,7 +80,7 @@ def write_section_title(h, section)
 end
 
 def write_section_body(h, section)
-  section.css('p').each do |p|
+  section.xpath('.//p|.//table').each do |p|
     if p.text =~ /[a-z]/
       h.p do
         write_stripped(h, p)
@@ -97,6 +97,8 @@ def write_stripped(h, parent)
       h.a 'href' => node['href'] do
         write_stripped(h, node)
       end
+    elsif node.name.downcase == 'img' && node['src']
+      h.img 'src' => node['src']
     else
       write_stripped(h, node)
     end

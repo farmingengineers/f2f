@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h3>{{ page.title }}</h3>
+
+{{content}}
+
+<hr>
+
+{% for image in page.images %}
+<div class="newsletter-image">
+  <p><img src="{{ image.url }}"></p>
+  <p>{{ image.caption }}</p>
+</div>
+{% endfor %}

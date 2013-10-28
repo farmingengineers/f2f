@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h3>Newsletters</h3>
+
+{% for post in site.posts %}
+<p><a href="{{post.url}}">{{post.date | date: "%b %d"}} - {{post.title}}</a></p>
+{% endfor %}

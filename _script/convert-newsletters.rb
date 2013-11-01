@@ -33,7 +33,7 @@ def write_front_matter(out, mail, html)
   data['category'] = 'newsletters'
   data['layout'] = 'newsletter'
   data['images'] = images = []
-  sidebar_items = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[1]/table/tr/td/table')
+  sidebar_items = html.xpath('//*[@id="rootDiv"]/div/table/tr/td/table/tr[2]/td/table/tr/td[1]/table/tr/td/table')
   spacers_found = 0
   sidebar_items.each do |e|
     if( (img = e.css('img').first) && (img['src'] =~ /spacer/) )
@@ -53,7 +53,7 @@ def write_front_matter(out, mail, html)
 end
 
 def write_content(out, mail, html)
-  main = html.xpath('//*[@id="rootDiv"]/div[4]/table/tr/td/table/tr[2]/td/table/tr/td[2]/table/tr/td')
+  main = html.xpath('//*[@id="rootDiv"]/div/table/tr/td/table/tr[2]/td/table/tr/td[2]')
   res = Nokogiri::HTML::Builder.new do |h|
     h.body do
       write_dat(h, main)
@@ -73,7 +73,7 @@ def write_dat(h, node)
       end
     elsif child.name == 'img' && child['src']
       h.div { h.img 'src' => make_image_local(child['src']) }
-    elsif child.name == 'span' && child['style'] =~ /16pt/ && child.css('img').empty?
+    elsif child.name == 'span' && child['style'] =~ /16pt/ && child.css('img').empty? && child.text.length < 200
       h.h4 { h.text(get_clean_text(child)) }
     elsif child.name == 'p'
       h.p { write_dat(h, child) }

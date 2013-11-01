@@ -90,6 +90,16 @@ app.post('/hooks/jekyll/:token/:branch', function(req, res) {
 
 });
 
+// receive a new newsletter
+app.post('/mail', function(req, res) {
+  // ensure it's a newsletter.
+  // write the raw data to disk
+  // clone f2f and run the converter
+  // commit the result
+  // upload the raw email to s3
+  // email myself the result
+});
+
 // Start server
 var port = process.env.PORT || 8080;
 app.listen(port);

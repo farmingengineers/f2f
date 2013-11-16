@@ -62,6 +62,9 @@ def write_content(out, mail, html)
   out.puts res.doc.root.children
 end
 
+Nbsp = Nokogiri::HTML('&nbsp;').text.freeze
+Nbsp2 = Nbsp + Nbsp
+
 def write_dat(h, node)
   node.children.each do |child|
     if child.text?
@@ -77,6 +80,8 @@ def write_dat(h, node)
       h.h4 { h.text(get_clean_text(child)) }
     elsif child.name == 'p'
       h.p { write_dat(h, child) }
+    elsif child.name == 'div' && child.text == Nbsp2
+      h.div { h.text(child.text) }
     else
       write_dat(h, child)
     end

@@ -44,7 +44,7 @@ def write_front_matter(out, mail, html)
       image = item && item.css('img').first
       caption = item && get_clean_text(item)
       if spacers_found == 3 && item && image && caption
-        images.push 'url' => make_image_local(image['src']), 'caption' => caption
+        images.push 'url' => make_image_local(image['src']), 'caption' => caption.strip
       end
     end
   end

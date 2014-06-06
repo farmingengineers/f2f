@@ -12,7 +12,7 @@ require 'net/http'
 def main(*files)
   files = Dir['_raw/*'] if files.empty?
   files.each do |raw_path|
-    output_path = "_posts/#{File.basename(raw_path, '.txt')}.html"
+    output_path = "_posts/#{File.basename(raw_path.tr(' ', '-'), '.txt')}.html"
     puts "#{raw_path} -> #{output_path}"
     File.open output_path, 'w' do |f|
       convert raw_path, f

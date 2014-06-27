@@ -12,16 +12,29 @@ require 'net/http'
 def main(*files)
   files = Dir['_raw/*'] if files.empty?
   files.each do |raw_path|
-    output_path = "_posts/#{File.basename(raw_path.tr(' ', '-'), '.txt')}.html"
+    mail = Mail.read(raw_path)
+    output_path = generate_output_path(raw_path, mail)
     puts "#{raw_path} -> #{output_path}"
     File.open output_path, 'w' do |f|
-      convert raw_path, f
+      convert mail, f
     end
   end
 end
 
-def convert(raw_path, out)
-  mail = Mail.read(raw_path)
+def generate_output_path(raw_path, mail)
+  date, name =
+    case base = File.basename(raw_path, '.txt')
+    when /^(\d\d\d\d-\d\d-\d\d)-(.+)/
+      [$1, $2]
+    else
+      [mail.date.strftime("%Y-%m-%d"), mail.subject]
+    end
+  # Make spaces into dashes, make it lowercase, and remove everything else.
+  fixed_name = name.downcase.tr(' ', '-').gsub(/[^a-z-]+/, '').gsub(/-+/, '-')
+  "_posts/#{date}-#{fixed_name}.txt"
+end
+
+def convert(mail, out)
   html = Nokogiri::HTML(mail.html_part.body.decoded)
   write_front_matter(out, mail, html)
   write_content(out, mail, html)

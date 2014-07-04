@@ -30,7 +30,7 @@ def generate_output_path(raw_path, mail)
       [mail.date.strftime("%Y-%m-%d"), mail.subject]
     end
   # Make spaces into dashes, make it lowercase, and remove everything else.
-  fixed_name = name.downcase.tr(' ', '-').gsub(/[^a-z-]+/, '').gsub(/-+/, '-')
+  fixed_name = name.downcase.tr(' ', '-').gsub(/[^a-z0-9-]+/, '').gsub(/-+/, '-')
   "_posts/#{date}-#{fixed_name}.txt"
 end
 

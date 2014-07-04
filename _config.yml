@@ -25,6 +25,7 @@ pygments: true
 paginate: 5
 
 exclude:
+  - .ruby-version
   - CNAME
   - Gemfile
   - Gemfile.lock

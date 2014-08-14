@@ -3,10 +3,59 @@ title: Giving back to the community
 category: newsletters
 layout: newsletter
 images:
-- url: /images/newsletters/eb24c9f00b7c348dcf60db57840418a6.gif
-  caption: ''
-- url: /images/newsletters/8b8cf8db71584aa7c50289eff7083987.png
-  caption: ''
+- url: /images/newsletters/1b9cf696a2986c9d3c97987455f5d148.jpg
+  caption: Sweet as honey carrots are available from Redwine Farm, fresh, local and
+    chemical free!
+- url: /images/newsletters/ce70de9f966965fa7b5d8ba037faa06a.jpg
+  caption: Tomatoes galore! Available from several vendors including Farming Engineers
+    and Magnolia Mill. these are the best tasting organic tomatoes you will find!
+- url: /images/newsletters/4362000a35210f67e94661cbbe1902b5.jpg
+  caption: Borre Brothers offer fermented veggies, kombucha and kefir. Ask them to
+    explain why it's so good for your digestive system.
+- url: /images/newsletters/96646b7cc1a5646aaa285639de06f75a.jpg
+  caption: Delft Blue with lobelia. The Cracked Pot has a large selection of plants
+    and flowers, including starts of Moon Vine and Heavenly Blue Morning Glory. Ready-go-go
+    baskets, too!
+- url: /images/newsletters/c3ef6e251e6628a5e494c0b71eb95639.jpg
+  caption: Organic Whole Wheat English Muffins from Valentine Hill Farm. Available
+    plain or cinnamon. What a breakfast treat!
+- url: /images/newsletters/bda5c9edc58f6619689bb481f6994433.jpg
+  caption: First of the season green beans from Magnolia Mill -- local and organic.
+    Can't get any better than this unless you grew them yourself.
+- url: /images/newsletters/59317970fe923742863d475a0907fd35.jpg
+  caption: Simple Tastes has Vegan and Gluten-free Brownies, Muffins and pies! YUM!
+- url: /images/newsletters/a02de061a31197347448713616999764.jpg
+  caption: Organic Shiitake mushrooms from Shamrock Farms are available at the Farm
+    to Fork Market table.
+- url: /images/newsletters/a000d85460ebc3c83b04db0b6537f7c0.jpg
+  caption: Kombucha is one of many items at The Swiss Connection. Also offering you
+    the best in cheeses and pet milk products.
+- url: /images/newsletters/8e9bfbc14703ffbb9f1b918b134f4b75.jpg
+  caption: 2014 Honey is available! Also organic popcorn and hand cream. Need organic
+    hay? Talk to Rob Green at Bluffwood Creek.
+- url: /images/newsletters/06a17cb9bebbaeb10e3a5889362afd0f.jpg
+  caption: Pupusas and tamales are fresh cooked from 3 in 1 Restaurant. Enjoy a snack
+    while you shop or take some home for dinner.
+- url: /images/newsletters/38a3c59d8b8c0a6e8d3fe44cabfbeffd.jpg
+  caption: The Yegerlehner Family offers the best in cheeses and pet dairy products.
+- url: /images/newsletters/2aa3d0f266ccaf81318405e0dabf2fc5.jpg
+  caption: Cooking is a snap with organic crock pot meals from U-Relish.
+- url: /images/newsletters/a16bdbc32998772622d8452dfb09aaac.jpg
+  caption: Jessica and Emily make their BlackHeart cold-brew coffee concentrate. It
+    makes great iced coffee or is perfect for a quick and delicious cuppa java!
+- url: /images/newsletters/183e09c41e1f884c3533ae8c512aa440.jpg
+  caption: Laundry soap and wool dryer balls are among the products from Barnyard
+    Basics
+- url: /images/newsletters/4f54c50fd0ca526ee2fca38fc2ae88c0.jpg
+  caption: Fresh eggs from Farming Engineers, Full Circle Farm and Redwine Farms are
+    now in abundant supply.
+- url: /images/newsletters/f291c0dd4172ccf26890fea60f0b9f4b.jpg
+  caption: Guinea Girl products include natural and organic lotions, creams and powders.
+- url: /images/newsletters/6787d13bbb6157bc15e75275be63f27a.jpg
+  caption: Well-mannered and leashed pets are always welcome.
+- url: /images/newsletters/41421fc08ee81da3db8fe6bbef820df1.jpg
+  caption: Find our vendors under the tents, by the barns and under the shade trees
+    at Farm to Fork Market.
 ---
      
 <p> </p>

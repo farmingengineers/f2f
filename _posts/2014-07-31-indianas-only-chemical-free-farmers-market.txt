@@ -3,10 +3,55 @@ title: Indiana's ONLY chemical-free farmer's market
 category: newsletters
 layout: newsletter
 images:
-- url: /images/newsletters/eb24c9f00b7c348dcf60db57840418a6.gif
-  caption: ''
-- url: /images/newsletters/8b8cf8db71584aa7c50289eff7083987.png
-  caption: ''
+- url: /images/newsletters/0d54ddb5a835422d4238316b4336c412.jpg
+  caption: Fresh, fresh, fresh! Plus local and chemical-free! Visit the Farming Engineers
+    or any of the vendors at the market.
+- url: /images/newsletters/46439be6dd4ca7353677b8fb65feec68.jpg
+  caption: Beets! If you don't think you like beets, try roasting them. Sweet as candy!
+    Add a little goat cheese and balsamic vinegar for a real gourmet treat!
+- url: /images/newsletters/d383e9b4d6195e4c9635595cfee82644.jpg
+  caption: New natural or organic soaps are available from Dream Girl Soapery. Now
+    featuring spa-collection Soleseife!
+- url: /images/newsletters/0feb60551d774cbb3b194f3b46ca8b60.jpg
+  caption: Micah's End of the Trail Ranch features delicious and healthy bison.
+- url: /images/newsletters/c3ef6e251e6628a5e494c0b71eb95639.jpg
+  caption: Organic Whole Wheat English Muffins from Valentine Hill Farm. Available
+    plain or cinnamon. What a breakfast treat!
+- url: /images/newsletters/59317970fe923742863d475a0907fd35.jpg
+  caption: Simple Tastes has Vegan and Gluten-free Brownies, Muffins and pies! YUM!
+- url: /images/newsletters/0cd43fffebe868e75fbe16181f23c64b.jpg
+  caption: Borre Brothers offer fermented veggies, kombucha and kefir. Ask them to
+    explain why it's so good for your digestive system.
+- url: /images/newsletters/a02de061a31197347448713616999764.jpg
+  caption: Organic Shiitake mushrooms from Shamrock Farms are available at the Farm
+    to Fork Market table.
+- url: /images/newsletters/10ea412fe6318aa15f437b491fd9f95d.jpg
+  caption: Cooking is a snap with organic crock pot meals from U-Relish, also featuring
+    jerky, summer sausage and all-beef hot dogs!
+- url: /images/newsletters/a000d85460ebc3c83b04db0b6537f7c0.jpg
+  caption: Kombucha is one of many items at The Swiss Connection. Also offering you
+    the best in cheeses and pet milk products.
+- url: /images/newsletters/8e9bfbc14703ffbb9f1b918b134f4b75.jpg
+  caption: 2014 Honey is available! Also organic popcorn and hand cream. Need organic
+    hay? Talk to Rob Green at Bluffwood Creek.
+- url: /images/newsletters/d85ef5cb78f91339dba8284989af6f04.jpg
+  caption: Pupusas are cooked to order fresh from 3 in 1 Restaurant. Enjoy a snack
+    while you shop or take some home for dinner.
+- url: /images/newsletters/38a3c59d8b8c0a6e8d3fe44cabfbeffd.jpg
+  caption: The Yegerlehner Family offers the best in cheeses and pet dairy products.
+- url: /images/newsletters/a16bdbc32998772622d8452dfb09aaac.jpg
+  caption: Jessica and Emily make their BlackHeart cold-brew coffee concentrate. It
+    makes great iced coffee or is perfect for a quick and delicious cuppa java!
+- url: /images/newsletters/55781c3fabe6c476cf09b9ba95e79b1d.jpg
+  caption: Laundry soap and wool dryer balls are among the products from Barnyard
+    Basics
+- url: /images/newsletters/4f54c50fd0ca526ee2fca38fc2ae88c0.jpg
+  caption: Fresh eggs from Farming Engineers, Full Circle Farm and Redwine Farms are
+    now in abundant supply.
+- url: /images/newsletters/ba167f7624606770c1fde28cd97f6ad8.jpg
+  caption: Guinea Girl products include natural and organic lotions, creams and powders.
+- url: /images/newsletters/6787d13bbb6157bc15e75275be63f27a.jpg
+  caption: Well-mannered and leashed pets are always welcome.
 ---
      
 <p> </p>

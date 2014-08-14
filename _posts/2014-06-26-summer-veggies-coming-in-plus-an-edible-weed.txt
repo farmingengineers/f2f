@@ -3,10 +3,74 @@ title: Summer veggies coming in, plus an edible weed!
 category: newsletters
 layout: newsletter
 images:
-- url: /images/newsletters/eb24c9f00b7c348dcf60db57840418a6.gif
-  caption: ''
-- url: /images/newsletters/8b8cf8db71584aa7c50289eff7083987.png
-  caption: ''
+- url: /images/newsletters/d008cb2057e8c9844e5eb4060ca3d4c4.gif
+  caption: Summer Market Fridays 4-7 p.m. Did You Know? ~You can use your credit card
+    at Farm to Fork Market? Just visit the Friends booth and buy any amount of certificates
+    in $5 increments. We charge your credit card for the amount plus a $1 fee. You
+    may use the certificates at any vendor's booth. You receive cash back as you spend
+    your certificates AND they are good all year!
+- url: /images/newsletters/bc6df9814410cd9e2990a8c7e30a2763.jpg
+  caption: Sugar snap peas are spring's sweetest snack. Jacob Redwine has them fresh,
+    local and chemical free!
+- url: /images/newsletters/b5e9e7e4b68707cd7461b8c2cb5e6d7e.jpg
+  caption: Fresh picked organic strawberries are are available from Farming Engineers.
+- url: /images/newsletters/ce70de9f966965fa7b5d8ba037faa06a.jpg
+  caption: Some early tomatoes are available from several vendors including Farming
+    Engineers and Magnolia Mill. It won't be long before the best tasting organic
+    tomatoes will be in good supply!
+- url: /images/newsletters/8e9bfbc14703ffbb9f1b918b134f4b75.jpg
+  caption: First of the season HONEY is available this week! Also organic popcorn
+    and hand cream are just a few of the specialties from Rob Green at Bluffwood Creek.
+- url: /images/newsletters/06a17cb9bebbaeb10e3a5889362afd0f.jpg
+  caption: Pupusas and tamales are fresh cooked from 3 in 1 Restaurant. Enjoy a snack
+    while you shop or take some home for dinner.
+- url: /images/newsletters/d383e9b4d6195e4c9635595cfee82644.jpg
+  caption: Bergamot and Green Tea soap from Dream Girl Soapery. Just one of dozens
+    of wonderful natural scents.
+- url: /images/newsletters/38a3c59d8b8c0a6e8d3fe44cabfbeffd.jpg
+  caption: The Swiss Connection offers the best in cheeses and pet milk products.
+- url: /images/newsletters/96646b7cc1a5646aaa285639de06f75a.jpg
+  caption: Delft Blue with lobelia. The Cracked Pot has a large selection of plants
+    and flowers, including starts of Moon Vine and Heavenly Blue Morning Glory. Ready-go-go
+    baskets, too!
+- url: /images/newsletters/c3ef6e251e6628a5e494c0b71eb95639.jpg
+  caption: Organic Whole Wheat English Muffins from Valentine Hill Farm. Available
+    plain or cinnamon. What a breakfast treat!
+- url: /images/newsletters/4362000a35210f67e94661cbbe1902b5.jpg
+  caption: Borre Brothers offer fermented veggies, kombucha and kefir. Ask them to
+    explain why it's so good for your digestive system.
+- url: /images/newsletters/bda5c9edc58f6619689bb481f6994433.jpg
+  caption: First of the season green beans from Magnolia Mill -- local and organic.
+    Can't get any better than this unless you grew them yourself.
+- url: /images/newsletters/a000d85460ebc3c83b04db0b6537f7c0.jpg
+  caption: Kombucha is one of many items at The Swiss Connection. Also offering you
+    the best in cheeses and pet milk products.
+- url: /images/newsletters/511ae0e036258620b77eaba11ab6cdeb.jpg
+  caption: Radishes can't get any fresher than this from Redwine Farms.
+- url: /images/newsletters/a02de061a31197347448713616999764.jpg
+  caption: Organic Shiitake mushrooms from Shamrock Farms are available at the Farm
+    to Fork Market table.
+- url: /images/newsletters/a16bdbc32998772622d8452dfb09aaac.jpg
+  caption: Jessica and Emily make their BlackHeart cold-brew coffee concentrate. It
+    makes great iced coffee or is perfect for a quick and delicious cuppa java!
+- url: /images/newsletters/c04bc87c5b90d0e810822144f43e813e.jpg
+  caption: Wool dryer balls with attitude from Barnyard Basics
+- url: /images/newsletters/4f54c50fd0ca526ee2fca38fc2ae88c0.jpg
+  caption: Arrive early for fresh eggs from Farming Engineers, Full Circle Farm and
+    Redwine Farms. They sell out quickly.
+- url: /images/newsletters/2aa3d0f266ccaf81318405e0dabf2fc5.jpg
+  caption: Cooking is a snap with organic crock pot meals from U-Relish.
+- url: /images/newsletters/8c1fa860fc11523fd947f5c8b2c673cc.jpg
+  caption: Simple Tastes has Vegan and Gluten-free Brownies, Muffins and pies! YUM!
+- url: /images/newsletters/215b9d6434024815899467a8ce1e545f.jpg
+  caption: Happy Gourmet makes eating a snap. And Oh So Good!
+- url: /images/newsletters/f291c0dd4172ccf26890fea60f0b9f4b.jpg
+  caption: Guinea Girl products include natural and organic lotions, creams and powders.
+- url: /images/newsletters/6787d13bbb6157bc15e75275be63f27a.jpg
+  caption: Well-mannered and leashed pets are always welcome.
+- url: /images/newsletters/41421fc08ee81da3db8fe6bbef820df1.jpg
+  caption: Find our vendors under the tents, by the barns and under the shade trees
+    at Farm to Fork Market.
 ---
      
 <p> </p>

@@ -47,17 +47,12 @@ def write_front_matter(out, mail, html)
   data['layout'] = 'newsletter'
   data['images'] = images = []
   sidebar_items = html.xpath('//*[@id="rootDiv"]/div/table/tr/td/table/tr[2]/td/table/tr/td[1]/table/tr/td/table')
-  spacers_found = 0
   sidebar_items.each do |e|
-    if( (img = e.css('img').first) && (img['src'] =~ /spacer/) )
-      spacers_found += 1
-    end
-    if e['id'] && e['id'].start_with?('content_LETTER.BLOCK')
-      item = e#.css('p').first
-      image = item && item.css('img').first
-      caption = item && get_clean_text(item)
-      if spacers_found == 3 && item && image && caption
-        images.push 'url' => make_image_local(image['src']), 'caption' => caption.strip
+    img = e.css('img').first
+    if e['id'] && e['id'].start_with?('content_LETTER.BLOCK') && (image = e.css('img').first) && image['src'] !~ /spacer/
+      caption = get_clean_text(e).strip
+      if caption.to_s =~ /[a-z]/i
+        images.push 'url' => make_image_local(image['src']), 'caption' => caption
       end
     end
   end

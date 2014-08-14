@@ -3,6 +3,56 @@ title: Good news about sustainable agriculture!
 category: newsletters
 layout: newsletter
 images:
+- url: /images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg
+  caption: Summer Market Friday 4 to 7 p.m. See you in the meadow under the shade
+    trees!
+- url: /images/newsletters/d008cb2057e8c9844e5eb4060ca3d4c4.gif
+  caption: Did You Know? ~You can use your credit card at Farm to Fork Market? Just
+    visit the Friends booth and buy any amount of certificates in $5 increments. We
+    charge your credit card for the amount plus a $1 fee. You may use the certificates
+    at any vendor's booth. You receive cash back as you spend your certificates AND
+    they are good all year!
+- url: /images/newsletters/b5e9e7e4b68707cd7461b8c2cb5e6d7e.jpg
+  caption: Fresh picked organic strawberries are are available from several of our
+    vendors.
+- url: /images/newsletters/ec0620d02d4993c691dee01a5c443fc1.jpg
+  caption: First of the season HONEY is available this week! Also organic popcorn
+    and hand cream are just a few of the specialties from Bluffwood Creek.
+- url: /images/newsletters/bda5c9edc58f6619689bb481f6994433.jpg
+  caption: First of the season green beans from Magnolia Mill -- local and organic.
+    Can't get any better than this unless you grew them yourself.
+- url: /images/newsletters/06a17cb9bebbaeb10e3a5889362afd0f.jpg
+  caption: Pupusas and tamales are fresh cooked from 3 in 1 Restaurant. Enjoy a snack
+    while you shop or take some home for dinner.
+- url: /images/newsletters/9df3146bb26a17e94b349eb41acac647.jpg
+  caption: !binary |-
+    wqBDYW4geW91IHNwZWFrIEl0YWxpYW4/IEp1c3Qgc2F1dOkgc29tZSBncmVl
+    biBnYXJsaWMgZnJvbcKgRmFybWluZyBFbmdpbmVlcnMgYW5kIHlvdXIgcmVh
+    ZHkgdG8gZ28hwqDCoMKgwqA=
+- url: /images/newsletters/db3897970b07ca743ba5f7bf15b31676.jpg
+  caption: Only a few early tomatoes are available. But it won't be long before the
+    best tasting organic tomatoes will be in good supply!
+- url: /images/newsletters/38a3c59d8b8c0a6e8d3fe44cabfbeffd.jpg
+  caption: The Swiss Connection offers the best in cheeses and pet milk products.
+- url: /images/newsletters/c04bc87c5b90d0e810822144f43e813e.jpg
+  caption: Wool dryer balls with attitude from Barnyard Basics
+- url: /images/newsletters/6d802b8767c32b0fcb81423e5f71043b.jpg
+  caption: The Cracked Pot has a large selection of plants and flowers, including
+    starts of Moon Vine and Heavenly Blue Morning Glory. Ready-go-go baskets, too!
+- url: /images/newsletters/c3ef6e251e6628a5e494c0b71eb95639.jpg
+  caption: Organic Whole Wheat English Muffins from Valentine Hill Farm. Available
+    plain or cinnamon. What a breakfast treat!
+- url: /images/newsletters/4362000a35210f67e94661cbbe1902b5.jpg
+  caption: Borre Brothers offer fermented veggies, kombucha and kefir. Ask them to
+    explain why it's so good for your digestive system.
+- url: /images/newsletters/fabe58b519b913c47cdbd1576718404e.png
+  caption: Mizuna is also known as Japanese peppergrass. Dan at Magnolia Mill might
+    suggest to eat in salad or sauté with some boiled potatoes.
+- url: /images/newsletters/511ae0e036258620b77eaba11ab6cdeb.jpg
+  caption: Radishes can't get any fresher than this from Redwine Farms.
+- url: /images/newsletters/a02de061a31197347448713616999764.jpg
+  caption: Organic Shiitake mushrooms from Shamrock Farms are available at the Farm
+    to Fork Market table.
 - url: /images/newsletters/a16bdbc32998772622d8452dfb09aaac.jpg
   caption: Jessica and Emily make their BlackHeart cold-brew coffee concentrate. It
     makes great iced coffee or is perfect for a quick and delicious cuppa java!

@@ -88,7 +88,8 @@ def write_dat(h, node)
         write_dat(h, child)
       end
     elsif child.name == 'img' && child['src']
-      h.div { h.img 'src' => make_image_local(child['src']) }
+      local_url = make_image_local(child['src'])
+      h.div { h.img 'src' => local_url, 'class' => "img-#{File.basename(local_url).split('.')[0]}" }
     elsif child.name == 'span' && child['style'] =~ /16pt/ && child.css('img').empty? && child.text.length < 200
       h.h4 { h.text(get_clean_text(child)) }
     elsif child.name == 'p'

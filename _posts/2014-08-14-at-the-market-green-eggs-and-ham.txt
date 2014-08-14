@@ -109,15 +109,15 @@ images:
  
 <p> </p>
  
-<div><img src="/images/newsletters/424d7bfe8d04fc8f2055423cb9c62780.png"></div>
+<div><img src="/images/newsletters/424d7bfe8d04fc8f2055423cb9c62780.png" class="img-424d7bfe8d04fc8f2055423cb9c62780"></div>
   
 <p> </p>
       
 <div>&nbsp;&nbsp;</div>
              
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     Vendor Listing 
 <div>&nbsp;&nbsp;</div>
   
@@ -219,7 +219,7 @@ images:
  
 <p> </p>
    
-<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg"></div>
+<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg" class="img-06f9389932f912d0b3889facd345ecb5"></div>
  
 <p> Summer Market</p>
  
@@ -227,9 +227,9 @@ images:
  
 <p> See you in the meadow under the shade trees!</p>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
   
-<div><img src="/images/newsletters/20ff14b7d0b8bdd5a2d9eefb47cbcd60.jpg"></div>
+<div><img src="/images/newsletters/20ff14b7d0b8bdd5a2d9eefb47cbcd60.jpg" class="img-20ff14b7d0b8bdd5a2d9eefb47cbcd60"></div>
  
 <div>&nbsp;&nbsp;</div>
    

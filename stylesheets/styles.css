@@ -747,6 +747,11 @@ footer {
   padding: 1em;
 }
 
+.img-20ff14b7d0b8bdd5a2d9eefb47cbcd60 {
+  width: 203px;
+  height: 228px;
+}
+
 @media print, screen and (max-width: 1060px) {
   div.wrapper {
     width: auto;

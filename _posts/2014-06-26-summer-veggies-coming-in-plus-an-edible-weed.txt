@@ -45,17 +45,17 @@ images:
  
 <p> </p>
    
-<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=June+27%2C+2014+Newsletter&amp;utm_campaign=June+27%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/e7158bdba76d2cef35ffe98f6483008e.jpg"></div></a>
+<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=June+27%2C+2014+Newsletter&amp;utm_campaign=June+27%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/e7158bdba76d2cef35ffe98f6483008e.jpg" class="img-e7158bdba76d2cef35ffe98f6483008e"></div></a>
 Purslane as a prolific garden weed. 
 <p> </p>
  
-<div><img src="/images/newsletters/44706bbe03e7130e99e7d498384a6ec3.jpg"></div>
+<div><img src="/images/newsletters/44706bbe03e7130e99e7d498384a6ec3.jpg" class="img-44706bbe03e7130e99e7d498384a6ec3"></div>
 Purslane as a nutritious salad addition.      
 <div>&nbsp;&nbsp;</div>
              
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     Vendor Listing 
 <div>&nbsp;&nbsp;</div>
   
@@ -159,7 +159,7 @@ Purslane as a nutritious salad addition.
   
 <p> </p>
    
-<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg"></div>
+<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg" class="img-06f9389932f912d0b3889facd345ecb5"></div>
  
 <p> Summer Market</p>
  
@@ -167,5 +167,5 @@ Purslane as a nutritious salad addition.
  
 <p> See you in the meadow under the shade trees!</p>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
      

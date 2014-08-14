@@ -102,7 +102,7 @@ images:
  
 <p> </p>
   
-<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=June+20%2C+2014+Newsletter&amp;utm_campaign=June+20%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/a33b63e307ce016ec25303fadeff8d69.jpg"></div></a>
+<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=June+20%2C+2014+Newsletter&amp;utm_campaign=June+20%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/a33b63e307ce016ec25303fadeff8d69.jpg" class="img-a33b63e307ce016ec25303fadeff8d69"></div></a>
  
 <p>A wealth of farm, garden, nutrition and cooking knowledge is available free from our local libraries. Weather permitting, Pike and Central Library Services will be in attendance this week.</p>
  
@@ -114,9 +114,9 @@ images:
       
 <div>&nbsp;&nbsp;</div>
              
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     Vendor Listing 
 <div>&nbsp;&nbsp;</div>
   
@@ -224,5 +224,5 @@ images:
   
 <p> </p>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
      

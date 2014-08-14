@@ -53,15 +53,15 @@ images:
  
 <p> </p>
  
-<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=July+31%2C+2014+Newsletter&amp;utm_campaign=July+31%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/80328e6505619df3a9eef64c237af264.jpg"></div></a>
+<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=July+31%2C+2014+Newsletter&amp;utm_campaign=July+31%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/80328e6505619df3a9eef64c237af264.jpg" class="img-80328e6505619df3a9eef64c237af264"></div></a>
 Say 'Hi' to Farm to Fork's Market Apprentice, Angie Capretti when you see her Friday evening.  
 <p> </p>
       
 <div>&nbsp;&nbsp;</div>
              
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     Vendor Listing 
 <div>&nbsp;&nbsp;</div>
   
@@ -167,7 +167,7 @@ Say 'Hi' to Farm to Fork's Market Apprentice, Angie Capretti when you see her Fr
  
 <p> </p>
    
-<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg"></div>
+<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg" class="img-06f9389932f912d0b3889facd345ecb5"></div>
  
 <p> Summer Market</p>
  
@@ -175,9 +175,9 @@ Say 'Hi' to Farm to Fork's Market Apprentice, Angie Capretti when you see her Fr
  
 <p> See you in the meadow under the shade trees!</p>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
   
-<div><img src="/images/newsletters/20ff14b7d0b8bdd5a2d9eefb47cbcd60.jpg"></div>
+<div><img src="/images/newsletters/20ff14b7d0b8bdd5a2d9eefb47cbcd60.jpg" class="img-20ff14b7d0b8bdd5a2d9eefb47cbcd60"></div>
  
 <div>&nbsp;&nbsp;</div>
    

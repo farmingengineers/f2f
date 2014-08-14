@@ -61,15 +61,15 @@ images:
  
 <p> </p>
   
-<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=July+4%2C+2014+Newsletter&amp;utm_campaign=July+4%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/7f5011690d7b0fed3f9a2a4a4a10c92e.jpg"></div></a>
+<a href="http://indianapolis-indiana.funcityfinder.com/2014/02/08/farm-fork-indianas-chemical-free-farmers-market/?utm_source=February+15%2C+2014+Newsletter&amp;utm_campaign=Feb+15+2014&amp;utm_medium=email&amp;utm_source=July+4%2C+2014+Newsletter&amp;utm_campaign=July+4%2C+2014&amp;utm_medium=email"><div><img src="/images/newsletters/7f5011690d7b0fed3f9a2a4a4a10c92e.jpg" class="img-7f5011690d7b0fed3f9a2a4a4a10c92e"></div></a>
 Happy July 4th!  
 <p> </p>
       
 <div>&nbsp;&nbsp;</div>
              
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
     Vendor Listing 
 <div>&nbsp;&nbsp;</div>
   
@@ -173,7 +173,7 @@ Happy July 4th!
   
 <p> </p>
    
-<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg"></div>
+<div><img src="/images/newsletters/06f9389932f912d0b3889facd345ecb5.jpg" class="img-06f9389932f912d0b3889facd345ecb5"></div>
  
 <p> Summer Market</p>
  
@@ -181,5 +181,5 @@ Happy July 4th!
  
 <p> See you in the meadow under the shade trees!</p>
     
-<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif"></div>
+<div><img src="/images/newsletters/8d59750dd1d1f37345e65c0286f6f50e.gif" class="img-8d59750dd1d1f37345e65c0286f6f50e"></div>
      

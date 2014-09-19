@@ -19,6 +19,8 @@ def main(*files)
       convert mail, f
     end
   end
+  system "git", "add", "-v", "_posts", "_cc_hrefs.yml", "images"
+  system "git", "status"
 end
 
 def generate_output_path(raw_path, mail)

@@ -45,7 +45,7 @@ class F2fConverter
       end
     # Make spaces into dashes, make it lowercase, and remove everything else.
     fixed_name = name.downcase.tr(' ', '-').gsub(/[^a-z0-9-]+/, '').gsub(/-+/, '-')
-    "_posts/#{date}-#{fixed_name}.txt"
+    "_posts/#{date}-#{fixed_name}.html"
   end
 
   def convert(mail, out)

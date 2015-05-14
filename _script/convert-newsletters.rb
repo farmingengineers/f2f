@@ -14,17 +14,27 @@ def main(*files)
   files = Dir['_raw/*'] if files.empty?
   files.each do |raw_path|
     mail = Mail.read(raw_path)
-    output_path = converter.generate_output_path(raw_path, mail)
-    puts "#{raw_path} -> #{output_path}"
-    File.open output_path, 'w' do |f|
-      converter.convert mail, f
-    end
+    converter.convert_to_post(mail, raw_path: raw_path)
   end
-  system "git", "add", "-v", "_posts", "_cc_hrefs.yml", "images"
+  converter.git_add
   system "git", "status"
 end
 
 class F2fConverter
+  def convert_to_post(mail, raw_path: nil)
+    output_path = generate_output_path(raw_path, mail)
+    puts "#{raw_path} -> #{output_path}"
+    File.open output_path, 'w' do |f|
+      convert mail, f
+    end
+  end
+
+  def git_add
+    system "git", "add", "-v", "_posts", "_cc_hrefs.yml", "images"
+  end
+
+  private
+
   def generate_output_path(raw_path, mail)
     date, name =
       case base = File.basename(raw_path, '.txt')

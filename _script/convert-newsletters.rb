@@ -21,7 +21,7 @@ def main(*files)
 end
 
 class F2fConverter
-  def convert_to_post(mail, raw_path: nil)
+  def convert_to_post(mail, raw_path: "")
     output_path = generate_output_path(raw_path, mail)
     puts "#{raw_path} -> #{output_path}"
     File.open output_path, 'w' do |f|
